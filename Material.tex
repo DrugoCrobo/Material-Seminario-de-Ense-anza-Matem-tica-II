@@ -425,7 +425,7 @@ Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$
     \begin{tabular}{|c|c|c|}
       \hline
       $Q$ & $S$ & $Q\lor S$ \\ \hline
-      $V$ &     &  $V$ \\ \hline
+      $F$ &     &  $V$ \\ \hline
           & $F$ &  $F$ \\ \hline
           & $F$ &  $V$ \\ \hline
       $V$ & $V$ &  \\
@@ -586,7 +586,7 @@ Los valores de verdad de la proposición $P\land Q$ depende de los valores de ve
 
 \vspace{.5cm}
 
-Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la disyunción.
+Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la conjunción.
 
 \begin{table}[h]
   \centering
@@ -594,24 +594,24 @@ Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la dis
     \hline
     Casos  & $P$ & $Q$ & $P\lor Q$ \\ \hline
     Caso 1 & $V$ & $V$ & $V$ \\ \hline
-    Caso 2 & $V$ & $F$ & $V$ \\ \hline
-    Caso 3 & $F$ & $V$ & $V$ \\ \hline
+    Caso 2 & $V$ & $F$ & $F$ \\ \hline
+    Caso 3 & $F$ & $V$ & $F$ \\ \hline
     Caso 4 & $F$ & $F$ & $F$ \\ \hline 
   \end{tabular}
-  \caption*{Tabla de verdad de la disyunción $P\lor Q$}
+  \caption*{Tabla de verdad de la disyunción $P\land Q$}
 \end{table}
 
 
-Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$, otra para $Q$ y una más para $P\lor Q$; y filas para los valores de verdad posibles de $P$, $Q$ y $P\lor Q$. La columna de "Casos" solo es de apoyo para poder relacionar de mejor manera el texto con la fila correspondiente.
+Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$, otra para $Q$ y una más para $P\land Q$; y filas para los valores de verdad posibles de $P$, $Q$ y $P\land Q$. La columna de "Casos" solo es de apoyo para poder relacionar de mejor manera el texto con la fila correspondiente.
 
 \newpage
 
-\textit{Ejercicio} 2: Apóyate en la tabla de verdad de la disyunción y responde:
+\textit{Ejercicio} 2: Apóyate en la tabla de verdad de la conjunción y responde:
 
 \begin{enumerate}
-  \item ¿En qué casos la proposición $P\lor Q$ es verdadera?
+  \item ¿En qué casos la proposición $P\land Q$ es verdadera?
 \vspace{5cm}
-  \item ¿En qué casos la proposición $P\lor Q$ es falsa?
+  \item ¿En qué casos la proposición $P\land Q$ es falsa?
 \end{enumerate}
 
 \vspace{5cm}
@@ -625,7 +625,7 @@ Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$
     \centering
     \begin{tabular}{|c|c|c|}
       \hline
-      $P$ & $Q$ & $P\lor Q$ \\ \hline
+      $P$ & $Q$ & $P\land Q$ \\ \hline
       $V$ & $V$ &  \\ \hline
       $V$ & $F$ &  \\ \hline
       $F$ & $V$ &  \\ \hline
@@ -638,7 +638,7 @@ Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$
     \centering
     \begin{tabular}{|c|c|c|}
       \hline
-      $Q$ & $S$ & $Q\lor S$ \\ \hline
+      $Q$ & $S$ & $Q\land S$ \\ \hline
       $F$ & $F$ &  \\ \hline
       $F$ & $V$ &  \\ \hline
       $V$ & $F$ &  \\ \hline
@@ -650,11 +650,11 @@ Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$
     \centering
     \begin{tabular}{|c|c|c|}
       \hline
-      $Q$ & $S$ & $Q\lor S$ \\ \hline
-      $V$ &     &  $V$ \\ \hline
+      $Q$ & $S$ & $Q\land S$ \\ \hline
+      $V$ &     &  $F$ \\ \hline
           & $F$ &  $F$ \\ \hline
-          & $F$ &  $V$ \\ \hline
-      $V$ & $V$ &  \\
+          & $V$ &  $V$ \\ \hline
+      $F$ & $V$ &  \\
       \hline
     \end{tabular}
   \end{minipage}
@@ -662,6 +662,19 @@ Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$
 \end{table}
 
 
+%...............................Actividad 2.......................................
+
+\newpage
+
+\clearpage
+\fancyhf{}
+\lhead{Actividad 2}
+%\rhead{Material 2}
+\setcounter{page}{1} %Reinicio del contador de página
+\cfoot{\thepage}
+
+
+\textit{Ejercicio} 1: Explica a tus compañeros de equipo la tabla de verdad 
 
 
 
