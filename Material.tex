@@ -1,344 +1,665 @@
-\documentclass[letterpaper]{article}
+\documentclass[letterpaper, twoside]{article}
 
 \usepackage{graphicx}
 \usepackage[margin=2.54cm]{geometry}
 \usepackage{mathtools}
 \usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{parskip}
+\usepackage{caption}
 
+
+%Encabezado
 \pagestyle{fancy}
-%\fancyhead[R]
-\fancyhead[L]{Seminario de Enseñanzas de las Matemáticas II}
+\fancyhf{}
+\lhead{Actividad 1}
+\rhead{Material 1}
+\cfoot{\thepage}
+
+%Margenes de las tablas
+\setlength{\tabcolsep}{10pt} % Aumenta el margen horizontal
+\renewcommand{\arraystretch}{1.7} % Aumenta la altura de las filas
 
 
 \begin{document}
 
-%\begin{center}
-%  \textbf{\Large Material de Trabajo}\par
-%  \large Alejandro Arellano Álvarez\par
-%  \large Irving Alberto Bautista Bautista\par
-%  \large Héctor Rodolfo Sánchez Morales
-%\end{center}
-
-\textbf{\large Proposiciones}
-
-\vspace{.5cm}
-
-¿Qué es una proposición? Es una oración de la cual se puede decir si es verdadera o falsa.\par
-
-\vspace{.5cm}
-
-Ejemplos:\par
+%.................Material 1.................................
 
 \begin{center}
-  Juan tiene seis gatos. \hspace{2cm} El pelo de María es de color castaño.\par
-  \vspace{.5cm}
-  Está lloviendo. \hspace{2cm} Este enunciado es verdadero.\par
-  \vspace{.5cm}
-  El enunciado anterior es falso. \hspace{2cm} La CDMX es la capital de Perú.
+  \textbf{\large Material 1}
 \end{center}
 
 \vspace{.5cm}
 
-Las siguientes oraciones no son proposiciones:\par
-
-\begin{center}
-  ¿Cómo te llamas? \hspace{2cm} Escribe un poema. \hspace{2cm} ¡Dios mio!\par
-\end{center}
+Objetivo: que el alumno entienda, a grandes rasgos, cómo funciona la tabla de verdad de la negación.
 
 \vspace{.5cm}
 
-Observa que  las oraciones anteriores son  preguntas, dan ordenes o  exclaman algo. No se puede decir que sean verdaderas o falsas.\par
+\textbf{Proposición}
+
+Una proposición es un enunciado del cual se puede decir si es verdadera o falsa. Una forma muy simple para mencionar a las proposiciones sin tener que estarlas escribiendo todo el tiempo es usando las letras mayúsculas $P,Q,R,S$.\par
 
 \vspace{.5cm}
 
-Ejercicio 1: Escribe 4 proposiciones.
+Como ya se menciono, una proposición $P$ puede ser verdadera ($V$) o falsa ($F$), es decir, tiene dos valores de verdad. Se puede representar en la siguiente tabla:\par
 
-\vspace{3cm}
-
-Se usaran las letras mayúsculas $P,Q,R,S$ para simbolizar a las proposiciones y son una forma de ahorrarse el trabajo de siempre escribir toda la proposición.\par
-
-\vspace{.5cm}
-
-Ejemplos:
-
-$P$: Está lloviendo. \hspace{1.5cm} $Q$: Este enunciado es verdadero. \hspace{1.5cm} $R$: Juan tiene seis gatos.
-
-\vspace{.5cm}
-
-Ejercicio 2: Simboliza las proposiciones que escribiste en el ejercicio 1.
-
-\vspace{3cm}
-
-También se usara la frase "valor de verdad de $P$" para hablar de la falsedad o verdad de una proposición $P$.\par
-
-\vspace{.5cm}
-
-Otros símbolos a usar son las la letras mayúsculas $V$ (verdadera) y $F$ (falsa) para el valor de verdad de $P$.
-
+\begin{table}[h]
+  \centering
+    \begin{tabular}{|c|}
+      \hline
+      $P$ \\ \hline
+      $V$ \\ \hline
+      $F$ \\
+      \hline
+    \end{tabular}
+  \caption*{Tabla de verdad de $P$}
+\end{table}
 
 \vspace{1cm}
 
-\textbf{\large Conectivo de la Negación}\par
+\textit{Ejercicio} 1: Completa las tablas de verdad de las proposiciones $Q$, $R$ y $S$ colocando el valor de verdad faltante.
+
+\begin{table}[htbp]
+
+  \centering
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $Q$ \\ \hline
+        $V$ \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $R$ \\ \hline
+        $F$ \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $S$ \\ \hline
+            \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}
+
+\end{table}
+
+\vspace{1cm}
+
+\textbf{Tabla de verdad de la Negación}
+
+La negación de una proposición es una nueva proposición.\par
 
 \vspace{.5cm}
 
-La negación de una proposición es el simple hecho de negar lo que nuestra proposición está afirmando, es decir, simplemente colocar un "No" o "No es cierto que".
-
-\vspace{.5cm}
-
-Ejemplos:
-
-\vspace{.5cm}
-
-Ejercicios 3: Escribe la negación de las proposiciones que escribiste en el ejercicio 1.
-
-\vspace{.5cm}
-
-Usaremos el símbolo $\textbf{$\neg$}$ para referirnos a la negación.\par
-
-\vspace{.5cm}
-
-La negación de una proposición $P$ en símbolos se escribe:
-
-$$\neg P$$
+El símbolo $\boldsymbol{\neg}$ representa la negación y es llamado "conectivo de la negación". De está manera, para una proposición $P$, la forma de representar su negación es de la siguiente manera:\par
+\begin{center}
+  $\neg P$
+\end{center}
 
 Se lee: no $P$
 
 \vspace{.5cm}
 
-Ejercicio 4: Simboliza las proposiciones del ejercicio 3.
-
-\vspace{3cm}
-
-Observa lo siguiente:
-\begin{center}
-  si la proposición es verdadera entonces su negación resulta ser falsa\par
-  \vspace{.2cm}
-  si la proposición es falsa entonces su negación resulta ser verdadera
-\end{center}
+Los valores de verdad de la proposición $\neg P$ se resumen en los siguientes dos casos:
+\begin{itemize}
+  \item Caso 1: Si la proposición $P$ es verdadera entonces su negación, $\neg P$, resulta ser falsa.\par
+  \begin{center}
+    \begin{tabular}{|c|c|}
+    \hline
+    $P$ & $\neg P$ \\ \hline
+    $V$ & $F$ \\
+    \hline
+  \end{tabular}
+  \end{center}
+  \item Caso 2: Si la proposición $P$ es falsa entonces su negación, $\neg P$, resulta ser verdadera.\par
+  \begin{center}
+    \begin{tabular}{|c|c|}
+    \hline
+    $P$ & $\neg P$ \\ \hline
+    $F$ & $V$ \\
+    \hline
+  \end{tabular}
+  \end{center}
+\end{itemize}
 
 \vspace{.5cm}
 
-Esto último se puede visualizar de mejor manera utilizando la tabla de verdad de la negación.\par
+Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la negación.
 
-\begin{center}
-  Insertar tabla de verdad
-\end{center}
+\begin{table}[h]
+  \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      Casos  & $P$ & $\neg P$ \\ \hline
+      Caso 1 & $V$ & $F$      \\ \hline
+      Caso 2 & $F$ & $V$       \\
+      \hline
+    \end{tabular}
+  \caption*{Tabla de verdad de la negación $\neg P$}
+\end{table}
 
-Observa que la tabla de arriba esta compuesta por columnas; una para la proposición $P$ y otra para la proposición $\neg P$; y filas con los valores de verdad posibles de $P$ y $\neg P$. 
+\vspace{.5cm}
+
+Observa que la tabla de arriba esta compuesta por columnas; una para la proposición $P$ y otra para la proposición $\neg P$; y filas con los valores de verdad posibles de $P$ y $\neg P$. La columna de "Casos" solo es de apoyo para poder relacionar de mejor manera el texto con la fila correspondiente.
+
+\vspace{.5cm}
+
+\textit{Ejercicio} 2: Apóyate en la tabla de verdad de la negación y responde:\par
+
+\begin{enumerate}
+  \item Si la proposición $\neg P$ es verdadera entonces la proposición $P$ es \hrulefill
+  \item Si la proposición $\neg P$ es falsa entonces la proposición $P$ es \hrulefill
+\end{enumerate}
+
+\vspace{.5cm}
+
+\textit{Ejercicio} 3: Completa las tablas de verdad con los valores de verdad faltantes.
+
+\begin{table}[h]
+  
+  \centering
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|}
+      \hline
+      $Q$ & $\neg Q$ \\ \hline
+      $V$ & \\ \hline
+      $F$ & \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \hfil
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|}
+      \hline
+      $R$ & $\neg R$ \\ \hline
+          & $F$ \\ \hline
+      $F$ & \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|}
+      \hline
+      $\neg S$ & $S$ \\ \hline
+        & $V$\\ \hline
+        & $F$ \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+
+\end{table}
+
+%.................................Material 2................................
 
 \newpage
 
-\textbf{\large Proposiciones}
-
-\vspace{.5cm}
-
-¿Qué es una proposición? Es una oración de la cual se puede decir si es verdadera o falsa.\par
-
-\vspace{.5cm}
-
-Ejemplos:\par
+\clearpage
+\fancyhf{}
+\lhead{Actividad 1}
+\rhead{Material 2}
+\setcounter{page}{1} %Reinicio del contador de página
+\cfoot{\thepage}
 
 \begin{center}
-  Juan tiene seis gatos. \hspace{2cm} El pelo de María es de color castaño.\par
-  \vspace{.5cm}
-  Está lloviendo. \hspace{2cm} Este enunciado es verdadero.\par
-  \vspace{.5cm}
-  El enunciado anterior es falso. \hspace{2cm} La CDMX es la capital de Perú.
+  \textbf{\large Material 2}
 \end{center}
 
 \vspace{.5cm}
 
-Las siguientes oraciones no son proposiciones:\par
-
-\begin{center}
-  ¿Cómo te llamas? \hspace{2cm} Escribe un poema. \hspace{2cm} ¡Dios mio!\par
-\end{center}
+Objetivo: que el alumno entienda, a grandes rasgos, cómo funciona la tabla de verdad de la disyunción.
 
 \vspace{.5cm}
 
-Observa que  las oraciones anteriores son  preguntas, dan ordenes o  exclaman algo. No se puede decir que sean verdaderas o falsas.\par
+\textbf{Proposición}
+
+Una proposición es un enunciado del cual se puede decir si es verdadera o falsa. Una forma muy simple para mencionar a las proposiciones sin tener que estarlas escribiendo todo el tiempo es usando las letras mayúsculas $P,Q,R,S$.\par
 
 \vspace{.5cm}
 
-Ejercicio 1: Escribe 3 proposiciones.
+Como ya se menciono, una proposición $P$ puede ser verdadera ($V$) o falsa ($F$), es decir, tiene dos valores de verdad. Se puede representar en la siguiente tabla:\par
 
-\vspace{3cm}
-
-Se usaran las letras mayúsculas $P,Q,R,S$ para simbolizar a las proposiciones y son una forma de ahorrarse el trabajo de siempre escribir toda la proposición.\par
-
-\vspace{.5cm}
-
-Ejemplos:
-
-\begin{center}
-  $P$: Está lloviendo. \hspace{1.5cm} $Q$: Este enunciado es verdadero. \hspace{1.5cm} $R$: Juan tiene seis gatos.
-\end{center}
-
-\vspace{.5cm}
-
-Ejercicio 2: Simboliza las proposiciones que escribiste en el ejercicio 1.
-
-\vspace{3cm}
-
-También se usara la frase "valor de verdad de $P$" para hablar de la falsedad o verdad de una proposición $P$.\par
-
-\vspace{.5cm}
-
-Otros símbolos a usar son las la letras mayúsculas $V$ (verdadera) y $F$ (falsa) para el valor de verdad de $P$.
-
+\begin{table}[h]
+  \centering
+    \begin{tabular}{|c|}
+      \hline
+      $P$ \\ \hline
+      $V$ \\ \hline
+      $F$ \\
+      \hline
+    \end{tabular}
+  \caption*{Tabla de verdad de $P$}
+\end{table}
 
 \vspace{1cm}
 
-\textbf{\large Conectivo de la Conjunción}\par
+\textit{Ejercicio} 1: Completa las tablas de verdad de las proposiciones $Q$, $R$ y $S$ colocando el valor de verdad faltante.
+
+\begin{table}[htbp]
+
+  \centering
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $Q$ \\ \hline
+        $V$ \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $R$ \\ \hline
+        $F$ \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $S$ \\ \hline
+            \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}
+
+\end{table}
+
+\vspace{1cm}
+
+\textbf{ Conectivo de la Disyunción}\par
 
 \vspace{.5cm}
 
-Considera las siguientes proposiciones:
+Al considerar a la proposición $P$ y a la proposición $Q$ se puede formar una nueva proposición utilizando el conectivo de la disyunción.\par
+
+\vspace{.5cm}
+
+El símbolo $\boldsymbol{\lor}$ representa al conectivo de la disyunción. De está manera, para una proposición $P$ y otra proposición $Q$, la forma de representar la disyunción entre estas dos proposiciones es la siguiente:\par
 
 \begin{center}
-  (insertar proposición P)\par
-  (insertar proposición Q)
-\end{center} 
+  $P\lor Q$
+\end{center}
 
-Usando el conectivo de la conjunción "\textbf{y}" se forma la siguiente proposición:
+Se lee: $P$ ó $Q$
+
+\vspace{.5cm}
+
+\newpage
+
+Los valores de verdad de la proposición $P\lor Q$ depende de los valores de verdad de cada una de las proposiciones que la componen y de las combinaciones de estos valores de verdad. Así, se tienen los siguientes 4 casos:
+
+\begin{itemize}
+  \item Caso 1: Si las proposiciones $P$ y $Q$ son verdaderas entonces resulta que la proposición $P\lor Q$ es verdadera.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\lor Q$ \\ \hline
+    $V$ & $V$ & $V$\\
+    \hline
+  \end{tabular}
+  \end{center}
+\vspace{.7cm}
+  \item Caso 2: Si la proposición $P$ es verdadera y la proposición $Q$ es falsa entonces la proposición $P\lor Q$ es verdadera.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\lor Q$ \\ \hline
+    $V$ & $F$ & $V$\\
+    \hline
+  \end{tabular}
+  \end{center}
+\vspace{.7cm}
+  \item Caso 3: Si la proposición $P$ es falsa y la proposición $Q$ es verdadera entonces la proposición $P\lor Q$ es verdadera.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\lor Q$ \\ \hline
+    $F$ & $V$ & $V$\\
+    \hline
+  \end{tabular}
+  \end{center}
+\vspace{.7cm}
+  \item Caso 4: Si las proposiciones $P$ y $Q$ son falsas entonces resulta que la proposición $P\lor Q$ es falsa.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\lor Q$ \\ \hline
+    $F$ & $F$ & $F$\\
+    \hline
+  \end{tabular}
+  \end{center}
+
+\end{itemize}
+
+\vspace{.5cm}
+
+Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la disyunción.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Casos  & $P$ & $Q$ & $P\lor Q$ \\ \hline
+    Caso 1 & $V$ & $V$ & $V$ \\ \hline
+    Caso 2 & $V$ & $F$ & $V$ \\ \hline
+    Caso 3 & $F$ & $V$ & $V$ \\ \hline
+    Caso 4 & $F$ & $F$ & $F$ \\ \hline 
+  \end{tabular}
+  \caption*{Tabla de verdad de la disyunción $P\lor Q$}
+\end{table}
+
+
+Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$, otra para $Q$ y una más para $P\lor Q$; y filas para los valores de verdad posibles de $P$, $Q$ y $P\lor Q$. La columna de "Casos" solo es de apoyo para poder relacionar de mejor manera el texto con la fila correspondiente.
+
+\newpage
+
+\textit{Ejercicio} 2: Apóyate en la tabla de verdad de la disyunción y responde:
+
+\begin{enumerate}
+  \item ¿En qué casos la proposición $P\lor Q$ es verdadera?
+\vspace{5cm}
+  \item ¿En qué casos la proposición $P\lor Q$ es falsa?
+\end{enumerate}
+
+\vspace{5cm}
+
+\textit{Ejercicio} 3: Completa las tablas de verdad con los valores de verdad faltantes.
+
+\begin{table}[h]
+  
+  \centering
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $P$ & $Q$ & $P\lor Q$ \\ \hline
+      $V$ & $V$ &  \\ \hline
+      $V$ & $F$ &  \\ \hline
+      $F$ & $V$ &  \\ \hline
+      $F$ & $F$ &  \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \hfil
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $Q$ & $S$ & $Q\lor S$ \\ \hline
+      $F$ & $F$ &  \\ \hline
+      $F$ & $V$ &  \\ \hline
+      $V$ & $F$ &  \\ \hline
+      $V$ & $V$ &  \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $Q$ & $S$ & $Q\lor S$ \\ \hline
+      $V$ &     &  $V$ \\ \hline
+          & $F$ &  $F$ \\ \hline
+          & $F$ &  $V$ \\ \hline
+      $V$ & $V$ &  \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+
+\end{table}
+%..................................Material 3........................................
+
+\newpage
+
+\clearpage
+\fancyhf{}
+\lhead{Actividad 1}
+\rhead{Material 3}
+\setcounter{page}{1} %Reinicio del contador de página
+\cfoot{\thepage}
 
 \begin{center}
-  (insertar proposición P) y (insertar proposición Q)
+  \textbf{\large Material 3}
 \end{center}
 
 \vspace{.5cm}
 
-Ejercicio:
+Objetivo: que el alumno entienda, a grandes rasgos, cómo funciona la tabla de verdad de la disyunción.
 
 \vspace{.5cm}
 
-El símbolo $\land$ se usara para referirse al conectivo de la conjunción.
+\textbf{Proposición}
+
+Una proposición es un enunciado del cual se puede decir si es verdadera o falsa. Una forma muy simple para mencionar a las proposiciones sin tener que estarlas escribiendo todo el tiempo es usando las letras mayúsculas $P,Q,R,S$.\par
 
 \vspace{.5cm}
 
-La conjunción de dos proposiciones $P$ y $Q$ en símbolos se escribe:
+Como ya se menciono, una proposición $P$ puede ser verdadera ($V$) o falsa ($F$), es decir, tiene dos valores de verdad. Se puede representar en la siguiente tabla:\par
 
-$$P\land Q$$
+\begin{table}[h]
+  \centering
+    \begin{tabular}{|c|}
+      \hline
+      $P$ \\ \hline
+      $V$ \\ \hline
+      $F$ \\
+      \hline
+    \end{tabular}
+  \caption*{Tabla de verdad de $P$}
+\end{table}
+
+\vspace{1cm}
+
+\textit{Ejercicio} 1: Completa las tablas de verdad de las proposiciones $Q$, $R$ y $S$ colocando el valor de verdad faltante.
+
+\begin{table}[htbp]
+
+  \centering
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $Q$ \\ \hline
+        $V$ \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $R$ \\ \hline
+        $F$ \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.31\textwidth}
+      \centering
+      \begin{tabular}{|c|}
+        \hline
+        $S$ \\ \hline
+            \\ \hline
+            \\ 
+        \hline
+      \end{tabular}
+    \end{minipage}
+
+\end{table}
+
+\vspace{1cm}
+
+\textbf{ Conectivo de la Conjunción}\par
+
+\vspace{.5cm}
+
+Al considerar a la proposición $P$ y a la proposición $Q$ se puede formar una nueva proposición utilizando el conectivo de la conjunción.\par
+
+\vspace{.5cm}
+
+El símbolo $\boldsymbol{\land}$ representa al conectivo de la conjunción. De está manera, para una proposición $P$ y otra proposición $Q$, la forma de representar la conjunción entre estas dos proposiciones es la siguiente:\par
+
+\begin{center}
+  $P\land Q$
+\end{center}
 
 Se lee: $P$ y $Q$
 
 \vspace{.5cm}
 
-Los valores de verdad de este tipo de proposiciones depende de los valores de verdad de cada una de las proposiciones que la componen. Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la conjunción.
+\newpage
 
-\begin{center}
-  Insertar tabla
-\end{center}
+Los valores de verdad de la proposición $P\land Q$ depende de los valores de verdad de cada una de las proposiciones que la componen y de las combinaciones de estos valores de verdad. Así, se tienen los siguientes 4 casos:
 
-Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$, otra para $Q$ y una más para $P\land Q$; y filas para los valores de verdad posibles de $P$, $Q$ y $P\land Q$.
+\begin{itemize}
+  \item Caso 1: Si las proposiciones $P$ y $Q$ son verdaderas entonces resulta que la proposición $P\land Q$ es verdadera.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\land Q$ \\ \hline
+    $V$ & $V$ & $V$\\
+    \hline
+  \end{tabular}
+  \end{center}
+\vspace{.7cm}
+  \item Caso 2: Si la proposición $P$ es verdadera y la proposición $Q$ es falsa entonces la proposición $P\land Q$ es falsa.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\land Q$ \\ \hline
+    $V$ & $F$ & $F$\\
+    \hline
+  \end{tabular}
+  \end{center}
+\vspace{.7cm}
+  \item Caso 3: Si la proposición $P$ es falsa y la proposición $Q$ es verdadera entonces la proposición $P\lor Q$ es falsa.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\land Q$ \\ \hline
+    $F$ & $V$ & $F$\\
+    \hline
+  \end{tabular}
+  \end{center}
+\vspace{.7cm}
+  \item Caso 4: Si las proposiciones $P$ y $Q$ son falsas entonces resulta que la proposición $P\lor Q$ es falsa.
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $P$ & $Q$ & $P\lor Q$ \\ \hline
+    $F$ & $F$ & $F$\\
+    \hline
+  \end{tabular}
+  \end{center}
+
+\end{itemize}
+
+\vspace{.5cm}
+
+Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la disyunción.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Casos  & $P$ & $Q$ & $P\lor Q$ \\ \hline
+    Caso 1 & $V$ & $V$ & $V$ \\ \hline
+    Caso 2 & $V$ & $F$ & $V$ \\ \hline
+    Caso 3 & $F$ & $V$ & $V$ \\ \hline
+    Caso 4 & $F$ & $F$ & $F$ \\ \hline 
+  \end{tabular}
+  \caption*{Tabla de verdad de la disyunción $P\lor Q$}
+\end{table}
+
+
+Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$, otra para $Q$ y una más para $P\lor Q$; y filas para los valores de verdad posibles de $P$, $Q$ y $P\lor Q$. La columna de "Casos" solo es de apoyo para poder relacionar de mejor manera el texto con la fila correspondiente.
 
 \newpage
 
-\textbf{\large Proposiciones}
+\textit{Ejercicio} 2: Apóyate en la tabla de verdad de la disyunción y responde:
 
-\vspace{.5cm}
+\begin{enumerate}
+  \item ¿En qué casos la proposición $P\lor Q$ es verdadera?
+\vspace{5cm}
+  \item ¿En qué casos la proposición $P\lor Q$ es falsa?
+\end{enumerate}
 
-¿Qué es una proposición? Es una oración de la cual se puede decir si es verdadera o falsa.\par
+\vspace{5cm}
 
-\vspace{.5cm}
+\textit{Ejercicio} 3: Completa las tablas de verdad con los valores de verdad faltantes.
 
-Ejemplos:\par
+\begin{table}[h]
+  
+  \centering
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $P$ & $Q$ & $P\lor Q$ \\ \hline
+      $V$ & $V$ &  \\ \hline
+      $V$ & $F$ &  \\ \hline
+      $F$ & $V$ &  \\ \hline
+      $F$ & $F$ &  \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \hfil
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $Q$ & $S$ & $Q\lor S$ \\ \hline
+      $F$ & $F$ &  \\ \hline
+      $F$ & $V$ &  \\ \hline
+      $V$ & $F$ &  \\ \hline
+      $V$ & $V$ &  \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.31\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $Q$ & $S$ & $Q\lor S$ \\ \hline
+      $V$ &     &  $V$ \\ \hline
+          & $F$ &  $F$ \\ \hline
+          & $F$ &  $V$ \\ \hline
+      $V$ & $V$ &  \\
+      \hline
+    \end{tabular}
+  \end{minipage}
 
-\begin{center}
-  Juan tiene seis gatos. \hspace{2cm} El pelo de María es de color castaño.\par
-  \vspace{.5cm}
-  Está lloviendo. \hspace{2cm} Este enunciado es verdadero.\par
-  \vspace{.5cm}
-  El enunciado anterior es falso. \hspace{2cm} La CDMX es la capital de Perú.
-\end{center}
-
-\vspace{.5cm}
-
-Las siguientes oraciones no son proposiciones:\par
-
-\begin{center}
-  ¿Cómo te llamas? \hspace{2cm} Escribe un poema. \hspace{2cm} ¡Dios mio!\par
-\end{center}
-
-\vspace{.5cm}
-
-Observa que  las oraciones anteriores son  preguntas, dan ordenes o  exclaman algo. No se puede decir que sean verdaderas o falsas.\par
-
-\vspace{.5cm}
-
-Ejercicio 1: Escribe 3 proposiciones.
-
-\vspace{3cm}
-
-Se usaran las letras mayúsculas $P,Q,R,S$ para simbolizar a las proposiciones y son una forma de ahorrarse el trabajo de siempre escribir toda la proposición.\par
-
-\vspace{.5cm}
-
-Ejemplos:
-
-$P$: Está lloviendo. \hspace{1.5cm} $Q$: Este enunciado es verdadero. \hspace{1.5cm} $R$: Juan tiene seis gatos.
-
-\vspace{.5cm}
-
-Ejercicio 2: Simboliza las proposiciones que escribiste en el ejercicio 1.
-
-\vspace{3cm}
-
-También se usara la frase "valor de verdad de $P$" para hablar de la falsedad o verdad de una proposición $P$.\par
-
-\vspace{.5cm}
-
-Otros símbolos a usar son las la letras mayúsculas $V$ (verdadera) y $F$ (falsa) para el valor de verdad de $P$.
-
-
-\vspace{1cm}
-
-\textbf{\large Conectivo de la Disyunción}\par
-
-\vspace{.5cm}
-
-Considera las siguientes proposiciones:
-
-\begin{center}
-  (insertar proposición P)\par
-  (insertar proposición Q)
-\end{center} 
-
-Usando el conectivo de la disyunción "\textbf{o}" se forma la siguiente proposición:
-
-\begin{center}
-  (insertar proposición P) o (insertar proposición Q)
-\end{center}
-
-\vspace{.5cm}
-
-Ejercicio:
-
-\vspace{.5cm}
-
-El símbolo $\lor$ se usara para referirse al conectivo de la disyunción.
-
-\vspace{.5cm}
-
-La disyunción de dos proposiciones $P$ y $Q$ en símbolos se escribe:
-
-$$P\lor Q$$
-
-Se lee: $P$ o $Q$
-
-\vspace{.5cm}
-
-Los valores de verdad de este tipo de proposiciones depende de los valores de verdad de cada una de las proposiciones que la componen. Esto se puede visualizar de mejor manera utilizando la tabla de verdad de la disyunción.
-
-\begin{center}
-  Insertar tabla
-\end{center}
-
-Observa que la tabla de arriba esta compuesta por columnas; una columna para $P$, otra para $Q$ y una más para $P\lor Q$; y filas para los valores de verdad posibles de $P$, $Q$ y $P\lor Q$.
+\end{table}
 
 
 
